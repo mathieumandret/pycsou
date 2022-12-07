@@ -22,6 +22,6 @@ def test_to_string():
 
     expected_str =\
         f'Creditor: {creditor},' \
-        f' date: 2022-09-21 20:59:03, amount: 12.1'
+        f' date: 21/09/2022, amount: 12.1'
 
     assert expected_str == operation.__str__()

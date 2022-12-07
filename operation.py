@@ -6,6 +6,8 @@ RENT = 'SEPA ADL IMMOBILIER'
 ELECTRICITY = 'SEPA EDF'
 ISP = 'SEPA SFR FIXE ADSL'
 
+DATE_FORMAT = '%d/%m/%Y'
+
 
 class Operation:
 
@@ -30,4 +32,5 @@ class Operation:
 
     def __str__(self) -> str:
         return f'Creditor: {self.creditor},' \
-               f' date: {self.operation_date}, amount: {self.amount}'
+               f' date: {self.operation_date.strftime(DATE_FORMAT)},' \
+               f' amount: {self.amount}'
