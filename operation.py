@@ -29,5 +29,5 @@ class Operation:
         return self.creditor_is_one_of([RENT, ISP, ELECTRICITY])
 
     def __str__(self) -> str:
-        return f'Creditor={self.creditor},' \
+        return f'Creditor: {self.creditor},' \
                f' date: {self.operation_date}, amount: {self.amount}'
