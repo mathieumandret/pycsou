@@ -27,6 +27,5 @@ class CsvParser:
             if len(row) < 5:
                 continue
             operation = self.row_to_operation(row)
-            if operation.is_monthly_expense():
-                ops.append(operation)
+            ops.append(operation)
         return ops
