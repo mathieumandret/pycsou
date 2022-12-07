@@ -28,8 +28,12 @@ jobs:
           if [-f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Lint
-        run: |
-          flake8 --count
+        run: flake8 --count
+
+      - name: Test
+        run: pytest
+
+
 
 
 
